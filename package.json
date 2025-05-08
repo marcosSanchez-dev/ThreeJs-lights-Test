@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && webpack serve --config ./bundler/webpack.dev.js"
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && webpack serve --config ./bundler/webpack.dev.js",
+    "netlify-build": "npm run build"
   },
   "dependencies": {
     "@babel/core": "^7.12.10",
